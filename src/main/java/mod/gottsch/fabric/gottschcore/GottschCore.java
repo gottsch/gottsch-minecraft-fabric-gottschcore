@@ -18,6 +18,5 @@ public class GottschCore implements ModInitializer {
 		// NOTE ensure that these properties are only used server-side and not for registration properties.
 		CoreSimpleConfig.register(MODID + "-config");
 		CoreSimpleConfig.instance.addRollingFileAppender(MODID);
-		LOGGER.info("GottschCore by gottsch.");
 	}
 }
