@@ -20,9 +20,9 @@
 package mod.gottsch.fabric.gottschcore.spatial;
 
 import mod.gottsch.fabric.gottschcore.GottschCore;
-import net.minecraft.client.util.math.Vector3d;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.util.math.*;
+import org.joml.Vector3d;
 
 import javax.annotation.concurrent.Immutable;
 
