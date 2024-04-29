@@ -28,8 +28,6 @@ import net.minecraft.state.StateManager;
 import net.minecraft.util.BlockRotation;
 import net.minecraft.util.math.Direction;
 
-import javax.annotation.Nullable;
-
 /**
  * 
  * @author Mark Gottschling on Jan 15, 2020
@@ -53,7 +51,6 @@ public class BasedBlock extends Block implements IBasedBlock {
 	/**
 	 * 
 	 */
-	@Nullable
 	public BlockState getPlacementState(ItemPlacementContext context) {
 		return this.getDefaultState().with(BASE, context.getSide());
 	}

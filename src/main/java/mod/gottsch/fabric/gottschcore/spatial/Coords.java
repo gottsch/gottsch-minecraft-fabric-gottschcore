@@ -24,7 +24,6 @@ import net.minecraft.nbt.NbtCompound;
 import net.minecraft.util.math.*;
 import org.joml.Vector3d;
 
-import javax.annotation.concurrent.Immutable;
 
 
 /**
@@ -32,7 +31,6 @@ import javax.annotation.concurrent.Immutable;
  * @author Mark Gottschling on Feb 26, 2020
  *
  */
-@Immutable
 public class Coords implements ICoords {
     private final int x;
     private final int y;
