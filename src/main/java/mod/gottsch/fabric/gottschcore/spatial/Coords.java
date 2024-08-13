@@ -23,7 +23,7 @@ import mod.gottsch.fabric.gottschcore.GottschCore;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.util.math.*;
 import org.joml.Vector3d;
-
+import oshi.annotation.concurrent.Immutable;
 
 
 /**
@@ -31,6 +31,7 @@ import org.joml.Vector3d;
  * @author Mark Gottschling on Feb 26, 2020
  *
  */
+@Immutable
 public class Coords implements ICoords {
     private final int x;
     private final int y;
