@@ -1,6 +1,6 @@
 /*
  * This file is part of  GottschCore.
- * Copyright (c) 202 Mark Gottschling (gottsch)
+ * Copyright (c) 2022 Mark Gottschling (gottsch)
  * 
  * All rights reserved.
  *

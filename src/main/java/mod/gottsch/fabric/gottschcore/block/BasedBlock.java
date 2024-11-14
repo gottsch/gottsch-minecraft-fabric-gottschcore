@@ -19,10 +19,8 @@
  */
 package mod.gottsch.fabric.gottschcore.block;
 
-import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.data.client.VariantSettings;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 import net.minecraft.util.BlockRotation;
@@ -35,7 +33,7 @@ import net.minecraft.util.math.Direction;
  */
 public class BasedBlock extends Block implements IBasedBlock {
 
-	public BasedBlock(AbstractBlock.Settings properties) {
+	public BasedBlock(Settings properties) {
 		super(properties);
 			this.setDefaultState(this.stateManager.getDefaultState().with(BASE, Direction.UP));
 	}

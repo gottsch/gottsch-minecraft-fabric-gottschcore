@@ -1,35 +1,37 @@
 {
-  "schemaVersion": 1,
-  "id": "gottschcore",
-  "version": "${version}",
-
-  "name": "GottschCore",
-  "description": "",
-  "authors": [
-    "gottsch"
-  ],
-  "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/gottschcore",
-    "sources": "https://github.com/gottsch/gottsch-minecraft-GottschCore"
-  },
-
-  "license": "LGPL-3.0-or-later",
-  "icon": "assets/modid/icon.png",
-
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-      "mod.gottsch.fabric.gottschcore.GottschCore"
-    ]
-  },
-
-  "depends": {
-    "fabricloader": ">=0.15.10",
-    "fabric-api": "*",
-    "minecraft": "~1.20.5",
-    "java": ">=21"
-  },
-  "suggests": {
-    "another-mod": "*"
-  }
+	"schemaVersion": 1,
+	"id": "gottschcore",
+	"version": "${version}",
+	"name": "GottschCore",
+	"description": "Base API for all my mods.",
+	"authors": [
+		"gottsch"
+	],
+	"contact": {
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/gottschcore",
+		"sources": "https://github.com/gottsch/gottsch-minecraft-GottschCore"
+	},
+	"license": "GNU GPL v3",
+	"icon": "assets/gottschcore/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"mod.gottsch.fabric.gottschcore.GottschCore"
+		],
+		"fabric-datagen": [
+			"mod.gottsch.fabric.gottschcore.GottschCoreDataGenerator"
+		]
+	},
+	"mixins": [
+		"gottschcore.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
 }

@@ -19,13 +19,11 @@
  */
 package mod.gottsch.fabric.gottschcore.block;
 
-import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 import net.minecraft.util.math.Direction;
-
 
 /**
  * 
@@ -38,7 +36,7 @@ public class FacingBlock extends Block implements IFacingBlock {
 	 * 
 	 * @param properties
 	 */
-	public FacingBlock(AbstractBlock.Settings properties) {
+	public FacingBlock(Settings properties) {
 		super(properties);
 		this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH));
 

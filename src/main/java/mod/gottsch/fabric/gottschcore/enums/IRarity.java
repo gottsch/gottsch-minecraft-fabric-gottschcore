@@ -19,8 +19,6 @@
  */
 package mod.gottsch.fabric.gottschcore.enums;
 
-import mod.gottsch.fabric.gottschcore.enums.IEnum;
-
 /**
  * Tag interface
  * @author Mark Gottschling on Jul 28, 2019

@@ -25,7 +25,6 @@ import net.minecraft.util.math.*;
 import org.joml.Vector3d;
 
 
-
 /**
  *
  * @author Mark Gottschling on Feb 26, 2020

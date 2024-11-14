@@ -21,7 +21,6 @@
 package mod.gottsch.fabric.gottschcore.spatial;
 
 import net.minecraft.nbt.NbtCompound;
-import net.minecraft.world.StructureSpawns;
 
 /**
  *  GottschCore replacement for AABB.

@@ -21,7 +21,6 @@ package mod.gottsch.fabric.gottschcore.block;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.state.property.DirectionProperty;
-import net.minecraft.state.property.EnumProperty;
 import net.minecraft.util.math.Direction;
 
 /**
