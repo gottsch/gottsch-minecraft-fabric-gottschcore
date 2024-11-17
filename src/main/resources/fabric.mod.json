@@ -12,7 +12,7 @@
 		"sources": "https://github.com/gottsch/gottsch-minecraft-GottschCore"
 	},
 	"license": "GNU GPL v3",
-	"icon": "assets/gottschcore/icon.png",
+	"icon": "assets/gottschcore/gottschcore-logo.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [

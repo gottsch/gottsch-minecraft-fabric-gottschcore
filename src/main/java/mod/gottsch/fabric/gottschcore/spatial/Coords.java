@@ -35,7 +35,27 @@ public class Coords implements ICoords {
     private final int y;
     private final int z;
 
-    public static final Coords EMPTY = new Coords(0, -255, 0);
+    public static final ICoords EMPTY = Coords.of(0, -255, 0);
+
+    public static ICoords of(final int x, final int y, final int z) {
+        return new Coords(x, y, z);
+    }
+
+    public static ICoords of(ICoords coords) {
+        return new Coords(coords);
+    }
+
+    public static ICoords of(BlockPos pos) {
+        return new Coords(pos);
+    }
+
+    public static ICoords of(Vector3d vec) {
+        return new Coords(vec);
+    }
+
+    public static ICoords of(Vec3i vec) {
+        return new Coords(vec);
+    }
 
     /**
      *
@@ -43,6 +63,7 @@ public class Coords implements ICoords {
      * @param y
      * @param z
      */
+    @Deprecated
     public Coords(final int x, final int y, final int z) {
         this.x = x;
         this.y = y;
@@ -53,6 +74,7 @@ public class Coords implements ICoords {
      *
      * @param coords
      */
+    @Deprecated
     public Coords(ICoords coords) {
         this(coords.getX(), coords.getY(), coords.getZ());
     }
@@ -62,6 +84,7 @@ public class Coords implements ICoords {
      *
      * @param pos
      */
+    @Deprecated
     public Coords(BlockPos pos) {
         this(pos.getX(), pos.getY(), pos.getZ());
     }
@@ -71,6 +94,7 @@ public class Coords implements ICoords {
      *
      * @param vec
      */
+    @Deprecated
     public Coords(Vec3i vec) {
         this(MathHelper.floor(vec.getX()), MathHelper.floor(vec.getY()), MathHelper.floor(vec.getZ()));
     }
@@ -79,10 +103,10 @@ public class Coords implements ICoords {
      * Copy constructor from Vec3d
      * @param vec
      */
+    @Deprecated
     public Coords(Vector3d vec) {
         this(MathHelper.floor(vec.x), MathHelper.floor(vec.y), MathHelper.floor(vec.z));
     }
-
 
     /**
      * Offset this Coords n blocks up
